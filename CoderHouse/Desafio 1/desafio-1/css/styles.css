@@ -1,130 +1,78 @@
-#principal{
-    font-family: sans-serif;
-    margin: 0;
-    background: linear-gradient(315deg, #f5d020 0%, #f53803 74%);;
-   
-    background-size:100%;
-    
-}
-header{
+#principal {
+  font-family: sans-serif;
+  margin: 0;
+  background: linear-gradient(315deg, #f5d020 0%, #f53803 74%);
+  background-size: 100%; }
+
+header {
+  display: flex;
+  height: 70px;
+  background: linear-gradient(0deg, #22c1c3 0%, #ecaa1b 19%);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; }
+  header .logo {
     display: flex;
-    height: 70px;
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(236,170,27,1) 19%);
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-.logo{
-    display:flex;
     justify-content: center;
-    align-items: center;
-    
-
-}   
-.logo img{
-    height: 50px;
-    margin-right: 10px;
-    
-}
-.nav_menu{
+    align-items: center; }
+    header .logo img {
+      height: 50px;
+      margin-right: 10px; }
+    header .logo .marca {
+      font-family: 'Anton', sans-serif;
+      font-style: oblique;
+      font-size: 40px;
+      font-weight: 100; }
+  header .nav_label, header .nav_input {
+    display: none; }
+  header .nav_menu {
     display: grid;
     grid-auto-flow: column;
-    gap: 3em;
-    
-}
+    gap: 3em; }
+    header .nav_menu .menu_item {
+      text-decoration: none;
+      color: black;
+      font-weight: bolder; }
+      header .nav_menu .menu_item:hover {
+        color: chocolate; }
 
-.menu_item{
-    text-decoration: none;
-    color: black;
-    font-weight: bolder;
-}
-.menu_item:hover{
-    color: chocolate;
-}
-
-
-.nav_label, .nav_input{
-    display: none;
-}
-.sobreNosotros{
-    display: flex;
-    justify-content:center;
-    justify-items: center;
-    margin: auto;
-    
-}
-.sobreNosotros img{
-    height: 100px;
-}
-footer{
-
-    display:flex;
-    background-color:#EFD345;
-    height: 70px;
-    justify-content: space-around;
-    align-items: center;
-}
-.contactos{
-    font-weight: 600;
-    padding: 10px;
-    text-decoration: none;
-
-}
-.contactos:hover{
-    color: rgb(235, 11, 11);
-}
-
-.pagina{
-    font-weight: 600;
-    padding: 10px;
-    text-decoration: none;
-}
-.pagina:hover{
-    color: rgb(235, 17, 17);
-}
-
-.video{
+.youtube-wrapper {
+  margin-top: 50px;
+  margin-left: 300px;
+  height: 100%;
+  width: 50%; }
+  .youtube-wrapper .video {
     border: 2px solid black;
     height: 0%;
     padding-bottom: 50%;
     margin: auto;
-    position: relative;
-   
+    position: relative; }
+    .youtube-wrapper .video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%; }
 
-
-}
-.video iframe{
-    position: absolute;
-    top: 0;
-    left: 0;    
-    height: 100%;
-    width: 100%;
-}
-
-.youtube-wrapper{
-    margin-top: 50px;
-    margin-left: 300px;
-    height: 100%;
-    width: 50%;
-}
-
-.parrafo{
-    align-items: center;
-    margin-top: 100px;
-    margin-left: 30px;
-}
-.lorem{
+.parrafo {
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 30px; }
+  .parrafo .divPadre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+    text-align: center;
     font-family: 'Bebas Neue', cursive;
-    font-size: 50px;
-}
-.marca{
-    font-family: 'Anton', sans-serif;
-    font-style: oblique;
-    font-size: 40px;
-    font-weight: 100;
-}
-.div_parrafo{
+    font-size: 50px; }
+    .parrafo .divPadre .sobrenosotros .lorem {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 50px; }
+    .parrafo .divPadre .sobrenosotros img {
+      height: 100px; }
+  .parrafo .div_parrafo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,9 +81,28 @@ footer{
     font-weight: bold;
     border-style: solid;
     margin-right: 150px;
-    margin-left: 100px;
-}
-/* Aca empieza linea de codigo para hacerla responsive */
+    margin-left: 100px; }
+
+footer {
+  display: flex;
+  background-color: #EFD345;
+  height: 70px;
+  justify-content: space-around;
+  align-items: center; }
+  footer .contactos {
+    font-weight: 600;
+    padding: 10px;
+    text-decoration: none; }
+    footer .contactos:hover {
+      color: #eb0b0b; }
+  footer .pagina {
+    font-weight: 600;
+    padding: 10px;
+    text-decoration: none; }
+    footer .pagina:hover {
+      color: #eb1111; }
+
+      /* Aca empieza linea de codigo para hacerla responsive */
 @media (max-width: 700px){
     .nav_label{
         display: block;
