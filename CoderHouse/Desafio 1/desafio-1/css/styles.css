@@ -102,63 +102,6 @@ footer {
     footer .pagina:hover {
       color: #eb1111; }
 
-      /* Aca empieza linea de codigo para hacerla responsive */
-@media (max-width: 700px){
-    .nav_label{
-        display: block;
-        cursor: pointer;
-    }
-    .video{
-        display: none;
-    }
-    .nav_menu{
-        position: fixed;
-        top: 80px;
-        bottom: 0;
-        background: #f08080;
-        width: 100%;
-        left: 0;
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-        align-items: center;
-        clip-path: circle(0 at center);
-        transition: clip-path 1s ease-in-out;
-    }
-    
-    .nav_input:checked + .nav_menu{
-        clip-path: circle(100% at center);
-    }
-    
-     .parrafo{
-         width: 50%;
-         margin: auto;
-     }
-     .sobreNosotros{
-         display: flex;
-         justify-content: center;
-         align-items: center;
-     }
-     .div_parrafo{
-         width: 100%;
-         margin: auto;
-     }
-     
-     footer{
-         font-size: 12px;
-     }
-
-     
-     
-}
-@media (max-width: 470px){
-    .logo h2{
-        font-size:25px;
-        font-weight: 400px;
-        font-style: italic;
-        
-    }
-}
 
 /* aca inicia el style para la pagina galeria */
 #bodyGaleria{
@@ -277,13 +220,26 @@ footer {
     text-align: center;
     line-height: 30px;
 }
-#footerGalery{
-    display:flex;
-    background-color:#EFD345;
+#footerGalery {
+    display: flex;
+    background-color: #EFD345;
     height: 70px;
-    justify-content:space-around;
-    align-items: center;
-}
+    justify-content: space-around;
+    align-items: center; }
+    #footerGalery .contactos {
+      font-weight: 600;
+      padding: 10px;
+      text-decoration: none; }
+      #footerGalery .contactos:hover {
+        color: #eb0b0b; }
+    #footerGalery .pagina {
+      font-weight: 600;
+      padding: 10px;
+      text-decoration: none; }
+      #footerGalery .pagina:hover {
+        color: #eb1111; }
+  
+
 
 /* Aca empieza el codigo media queri de la galeria */
 @media (max-width: 562px){
@@ -306,60 +262,6 @@ footer {
         font-size: 30px;
     }
 }
-/* aca comenzaria la hoja de stilos para contactos */
-
-#contactos{
-    background-color:rgba(222, 184, 135, 0.329);
-    background-image: none;
-    margin: 0;
-}
-.contactos2{
-    font-family: 'Bangers', cursive;
-    font-size: x-large;
-    display: flex;
-    background-color: none;
-    justify-content:flex-start;
-    text-align: center;
-    
-}
-.logo3{
-    display: flex;
-    align-items: center;
-
-}
-.logo3 img { 
-    height: 50px;
-    margin-right: 10px;
-
-} 
-.paddingTB{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin: 50px auto;
-    
-}
-.formulario2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.formulario__3{
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(238,201,63,1) 19%);
-    font-weight: bold;
-    border: 1px solid black;
-}
-
-
-/* Media queri de contactos */
-@media (max-width: 610px){
-    .logo3 h1{
-        font-size: 35px;
-    }
-    
-}
-
 
 /*  aca empieza la seccion de actividades */
 
@@ -420,15 +322,24 @@ footer {
     margin-right: 10px;
 }
 
-#footerActv{
-
-    display:flex;
-    background-color:#EFD345;
-    height: 70px;
-    justify-content: space-around;
-    align-items: center;
-
-}
+#footerActv {
+  display: flex;
+  background-color: #EFD345;
+  height: 70px;
+  justify-content: space-around;
+  align-items: center; }
+  #footerActv .contactos {
+    font-weight: 600;
+    padding: 10px;
+    text-decoration: none; }
+    #footerActv .contactos:hover {
+      color: #eb0b0b; }
+  #footerActv .pagina {
+    font-weight: 600;
+    padding: 10px;
+    text-decoration: none; }
+    #footerActv .pagina:hover {
+      color: #eb1111; }
 
 /* Aca empieza el media queri de actividades */
 @media (max-width: 566px){
@@ -535,12 +446,24 @@ h2{
     background-color: rgb(228, 18, 18);
 }
 
-.footer_turnos{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-}
+.footer_turnos {
+  display: flex;
+  background-color: #EFD345;
+  height: 70px;
+  justify-content: space-around;
+  align-items: center; }
+  .footer_turnos .contactos {
+    font-weight: 600;
+    padding: 10px;
+    text-decoration: none; }
+    .footer_turnos .contactos:hover {
+      color: #eb0b0b; }
+  .footer_turnos .pagina {
+    font-weight: 600;
+    padding: 10px;
+    text-decoration: none; }
+    .footer_turnos .pagina:hover {
+      color: #eb1111; }
 
 @media (max-width: 700px){
 
@@ -558,3 +481,75 @@ h2{
         font-size: 25px;
     }
 } 
+
+/* aca comenzaria la hoja de stilos para contactos */
+
+#contactos{
+    background-color:rgba(222, 184, 135, 0.329);
+    background-image: none;
+    margin: 0;
+}
+.contactos2{
+    font-family: 'Bangers', cursive;
+    font-size: x-large;
+    display: flex;
+    background-color: none;
+    justify-content:flex-start;
+    text-align: center;
+    
+}
+.logo3{
+    display: flex;
+    align-items: center;
+
+}
+.logo3 img { 
+    height: 50px;
+    margin-right: 10px;
+
+} 
+.paddingTB{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 50px auto;
+    
+}
+.formulario2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.formulario__3{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(238,201,63,1) 19%);
+    font-weight: bold;
+    border: 1px solid black;
+}
+.footerContact {
+    display: flex;
+    background-color: #EFD345;
+    height: 70px;
+    justify-content: space-around;
+    align-items: center; }
+    .footerContact .contactos {
+      font-weight: 600;
+      padding: 10px;
+      text-decoration: none; }
+      .footerContact .contactos:hover {
+        color: #eb0b0b; }
+    .footerContact .pagina {
+      font-weight: 600;
+      padding: 10px;
+      text-decoration: none; }
+      .footerContact .pagina:hover {
+        color: #eb1111; }
+  
+
+/* Media queri de contactos */
+@media (max-width: 610px){
+    .logo3 h1{
+        font-size: 35px;
+    }
+    
+}

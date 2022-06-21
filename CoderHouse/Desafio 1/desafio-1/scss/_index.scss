@@ -106,26 +106,3 @@ header{
     }
 }
 
-footer{
-    display:flex;
-    background-color:#EFD345;
-    height: 70px;
-    justify-content: space-around;
-    align-items: center;
-    .contactos{
-        font-weight: 600;
-        padding: 10px;
-        text-decoration: none;
-        &:hover{
-            color: rgb(235, 11, 11);
-        }
-    }
-    .pagina{
-        font-weight: 600;
-        padding: 10px;
-        text-decoration: none;
-        &:hover{
-            color: rgb(235, 17, 17);
-        }
-    }
-}
